@@ -1,0 +1,93 @@
+body{
+    font-family: "Noto Sans TC", sans-serif;
+}
+.wrap{
+    max-width: 100%;
+    position: relative;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    @include pad(){
+        max-width: 700px;
+    }
+    @include mobile568(){
+        margin: 0 20px;
+    }
+}
+.line{
+    display: inline-block;
+    width: 82px;
+    border-top: 2px solid #000;
+}
+.flex{
+    display: flex;
+}
+.header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 50px;
+    img{
+        width: 80px;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 80px;
+        font-size: 20px;
+    }
+    @include mobile568(){
+        flex-direction: column;
+        align-items: center;
+        .menu{
+            display: block;
+            text-align: center;
+            padding-top: 10px;
+        }
+        a{
+            margin: 15px;
+        }
+    }
+    @include clearfix;
+}
+.footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    img{
+        width: 80px;
+    }
+    ul{
+        justify-content: flex-end;
+    }
+    a{
+        text-decoration: none;
+        display: block;
+        font-size: 40px;
+        margin-left: 40px;
+        color: #fff;
+    }
+    p{
+        font-size: 20px;
+        color: #fff;
+    }
+    @include mobile568(){
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        a{
+            margin: 0 10px;
+        }
+    }
+    @include clearfix;
+}

@@ -1,0 +1,10 @@
+@mixin clearfix {
+    clear:both;
+}
+@mixin circle($size, $bgcolor){
+    border-radius: 50%;
+    height: $size;
+    width: $size;
+    font-size: $size / 3;
+    background: $bgcolor;    
+}

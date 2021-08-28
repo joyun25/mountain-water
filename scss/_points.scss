@@ -1,0 +1,69 @@
+.two-points li{
+    padding: 50px 0;
+    .text{
+        margin: auto 90px;
+        h2{
+            font-size: $font-m;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        p{
+            padding-top: 40px;
+            font-size: $font-s;
+            line-height: 1.618;
+        }
+    }
+    @include pad(){
+        padding-bottom: 0;
+        display: block;
+        text-align: center;
+        img{
+            max-width: 385px;
+            width: 100%;
+        }
+        .text{
+            margin: 0;
+            h2{
+                font-size: 18px;
+                padding-bottom: 0;
+                margin: 15px 0;
+            }
+            .line{
+                display: none;
+            }
+            p{
+                padding: 0;
+            }
+        }
+    }
+}
+.r-reserve{
+    flex-direction: row-reverse;
+}
+.two-points{
+    @include pad(){
+        max-width: 600px;
+    }
+}
+.three-points{
+    padding: 50px 0;
+    @include pad(){
+        display: block;
+        max-width: 600px;
+        text-align: center;
+    }
+    li{
+        margin-bottom: 50px;
+        flex: 1;
+        padding: 0 20.83px;
+        h2{
+            font-weight: bold;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+        p{
+            line-height: 1.618;
+            font-size: $font-s;
+        }
+    }
+}
