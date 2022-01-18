@@ -1,6 +1,6 @@
 # 網頁設計切版讀書會
 版型皆出自 [zz41354899](https://github.com/zz41354899)，僅作切版練習
-### 山紫水明網頁：[Github Pages](https://joyun25.github.io/mountain-water/)
+### 山紫水明網頁：[Github Pages](https://joyun25.github.io/single-page-practice-flex/)
 ![](https://i.imgur.com/xkZrW3H.png)
 #### 功能：
 - 簡易的一頁式網頁
